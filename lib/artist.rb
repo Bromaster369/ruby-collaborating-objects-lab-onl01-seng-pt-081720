@@ -34,7 +34,7 @@ class Artist
   end 
   
   def self.create 
-    
+    artist = Artist(new)
   end 
   
   def print_songs
