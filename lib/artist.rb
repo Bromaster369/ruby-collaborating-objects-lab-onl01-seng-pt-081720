@@ -30,6 +30,6 @@ class Artist
   end 
   
   def self.find 
-    self.find { |artist| artist}
+    self.find { |artist| artist.name == name}
   end 
 end 
