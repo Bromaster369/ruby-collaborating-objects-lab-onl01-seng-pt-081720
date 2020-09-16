@@ -17,6 +17,7 @@ class Song
   def save 
     @@all << self 
   end 
+  
   def self.new_by_filename(filename)
     song_details = filename.chomp(".mp3").split(" - ")
     song = song.new(song_details[1])
