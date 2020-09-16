@@ -29,12 +29,13 @@ class Artist
    self.find(name) ? self.find(name) : self.new(name)
   end 
   
-  def self.find 
+  def self.find(name)
     self.all.find {|artist| artist.name == name}
   end 
   
-  def self.create 
-    artist = Artist(new)
+  def self.create(name)
+    artist = Artist.new(name)
+    artsit
   end 
   
   def print_songs
