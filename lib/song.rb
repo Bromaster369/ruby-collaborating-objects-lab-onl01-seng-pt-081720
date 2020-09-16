@@ -18,7 +18,7 @@ class Song
     @@all << self 
   end 
   def self.new_by_filename(filename)
-    song_details = filename.chomp()
+    song_details = filename.chomp(".mp3")
   end 
   
   def artist_name(name)
